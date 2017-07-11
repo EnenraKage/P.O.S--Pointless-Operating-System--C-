@@ -53,8 +53,155 @@ namespace ConsoleApp10
                     Console.WriteLine("POSBASIC - the basic programming language for P.O.S");
                     Console.WriteLine("webpage - allows you to visit a webpage on the newfangled internets");
                     Console.WriteLine("sourcecodePOS - displays source code of P.O.S via github");
-                    Console.WriteLine("background_colour - changes the background")
+                    Console.WriteLine("background_colour - changes the background");
+                    Console.WriteLine("text_colour - changes the text colour");
                     Console.WriteLine("---------------------------------------------------------");
+                }
+                else if (user_input1 == ("background_colour"))
+                {
+                    Console.WriteLine("type the colour you would like as your background (you can use: red, blue, cyan, magenta, black, green, white, yellow, grey/gray and dark variations eg dark grey, dark yellow)");
+                    var backgroundcolour = Convert.ToString(Console.ReadLine());
+                    if (backgroundcolour == ("red"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                    }
+                    else if (backgroundcolour == ("blue"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Blue;
+                    }
+                    else if (backgroundcolour == ("cyan"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Cyan;
+                    }
+                    else if (backgroundcolour == ("magenta"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Magenta;
+                    }
+                    else if (backgroundcolour == ("black"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Black;
+                    }
+                    else if (backgroundcolour == ("green"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                    }
+                    else if (backgroundcolour == ("white"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.White;
+                    }
+                    else if (backgroundcolour == ("grey"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                    }
+                    else if (backgroundcolour == ("gray"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                    }
+                    else if (backgroundcolour == ("dark red"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkRed;
+                    }
+                    else if (backgroundcolour == ("dark blue"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    }
+                    else if (backgroundcolour == ("dark cyan"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    }
+                    else if (backgroundcolour == ("dark magenta"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkMagenta;
+                    }
+                    else if (backgroundcolour == ("dark green"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                    }
+                    else if (backgroundcolour == ("dark grey"))
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkGray;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{backgroundcolour} is not a valid colour");
+                    }
+                    Console.Clear();
+                    Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
+                }
+                else if (user_input1 == ("text_colour"))
+                {
+                    Console.WriteLine("type the colour you would like as your text/foreground colour (you can use: red, blue, cyan, magenta, black, green, white, yellow, grey/gray and dark variations eg dark grey, dark yellow)");
+                    var foregroundcolour = Convert.ToString(Console.ReadLine());
+                    if (foregroundcolour == ("red"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+                    else if (foregroundcolour == ("blue"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    }
+                    else if (foregroundcolour == ("cyan"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+                    else if (foregroundcolour == ("magenta"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                    }
+                    else if (foregroundcolour == ("black"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Black;
+                    }
+                    else if (foregroundcolour == ("green"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }
+                    else if (foregroundcolour == ("white"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    else if (foregroundcolour == ("grey"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }
+                    else if (foregroundcolour == ("gray"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }
+                    else if (foregroundcolour == ("dark red"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                    }
+                    else if (foregroundcolour == ("dark blue"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    }
+                    else if (foregroundcolour == ("dark cyan"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    }
+                    else if (foregroundcolour == ("dark magenta"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    }
+                    else if (foregroundcolour == ("dark green"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    }
+                    else if (foregroundcolour == ("dark grey"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                    }
+                    else if (foregroundcolour == ("dark gray"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{foregroundcolour} is not a valid colour");
+                    }
+                    Console.Clear();
+                    Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 }
                 else if (user_input1 == ("webpage"))
                 {
