@@ -9,7 +9,7 @@ namespace ConsoleApp10
     {
         static void Main(string[] args)
         {
-            string POS_VERSION = ("v0.1.9");
+            string POS_VERSION = ("v0.2.1");
             string good_day = (DateTime.Now.ToShortTimeString());
             char please = (good_day[0]);
             char k = (good_day[1]);
@@ -125,6 +125,9 @@ namespace ConsoleApp10
                     {
                         Console.WriteLine($"{backgroundcolour} is not a valid colour");
                     }
+                    Console.WriteLine("-------------------------");
+                    Console.WriteLine("press enter to change the colour!");
+                    Console.ReadLine();
                     Console.Clear();
                     Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 }
@@ -200,6 +203,9 @@ namespace ConsoleApp10
                     {
                         Console.WriteLine($"{foregroundcolour} is not a valid colour");
                     }
+                    Console.WriteLine("-------------------------");
+                    Console.WriteLine("press enter to change the colour!");
+                    Console.ReadLine();
                     Console.Clear();
                     Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 }
