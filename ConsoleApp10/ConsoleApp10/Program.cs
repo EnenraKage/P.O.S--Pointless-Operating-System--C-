@@ -9,6 +9,7 @@ namespace ConsoleApp10
     {
         static void Main(string[] args)
         {
+            string POS_VERSION = ("v0.1.9");
             string good_day = (DateTime.Now.ToShortTimeString());
             char please = (good_day[0]);
             char k = (good_day[1]);
@@ -19,14 +20,14 @@ namespace ConsoleApp10
                 Console.BackgroundColor = ConsoleColor.White;
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.Clear();
-                Console.WriteLine("welcome to P.O.S v0.1.4 (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
+                Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 Console.WriteLine(Convert.ToString("the time is " + (good_day)));
                 Console.WriteLine("Good Morning!");
                 Console.WriteLine(needed_good_day);
             }
             else if (Convert.ToInt32(needed_good_day) >= (12))
             {
-                Console.WriteLine("welcome to P.O.S v0.1.4 (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
+                Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 Console.WriteLine("Good Afternoon / Night");
                 Console.WriteLine(Convert.ToString("the time is " + (good_day)));
             }
@@ -50,7 +51,24 @@ namespace ConsoleApp10
                     Console.WriteLine("alarm - sets an alarm (warning, you can't do anything while an alarm is set!)");
                     Console.WriteLine("playwav - plays wav files, pretty much explains itself in the title :P");
                     Console.WriteLine("POSBASIC - the basic programming language for P.O.S");
+                    Console.WriteLine("webpage - allows you to visit a webpage on the newfangled internets");
+                    Console.WriteLine("sourcecodePOS - displays source code of P.O.S via github");
+                    Console.WriteLine("background_colour - changes the background")
                     Console.WriteLine("---------------------------------------------------------");
+                }
+                else if (user_input1 == ("webpage"))
+                {
+                    Console.WriteLine("type the address of the website you would like to visit (most websites might not work and will just display the source code, you have been waaaaaarned!!!!!)");
+                    var address = Convert.ToString(Console.ReadLine());
+                    System.Net.WebClient wca = new System.Net.WebClient();
+                    string webDataa = wca.DownloadString(address);
+                    Console.WriteLine(webDataa);
+                }
+                else if (user_input1 == ("sourcecodePOS"))
+                {
+                    System.Net.WebClient wc = new System.Net.WebClient();
+                    string webData = wc.DownloadString("http://gothe.re/xBG");
+                    Console.WriteLine(webData);
                 }
                 else if (user_input1 == ("display"))
                 {
@@ -124,7 +142,7 @@ namespace ConsoleApp10
                 else if (user_input1 == ("clear"))
                 {
                     Console.Clear();
-                    Console.WriteLine("welcome to P.O.S v0.1.4 (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
+                    Console.WriteLine($"welcome to P.O.S {POS_VERSION} (Pointless Operating System), which is well a pointless operating system i'm making BECAUSE IM BORED yes im making this BECAUSE I AM BORED (i'm dumb) type help to bring up all available commands!.");
                 }
                 //else if (user_input1 == ("backcol"))
                 //{
